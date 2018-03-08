@@ -1,0 +1,37 @@
+body{
+  font-size:16px;
+  	font-family:"arial";
+	color:gainsboro;
+	background-color:#333333;
+
+}
+div{
+  background-color:#337AB7;
+  width:220px;
+  height:100px;
+  padding:40px;
+  color:#ffffff; 
+  margin:0px auto;
+  text-align: center;
+  border-radius: 10px;
+  font-size: 20px;
+  font-family:"微软雅黑";
+}
+table{
+  width:310px;
+  padding:10px;
+  border:1px solid green;
+  background-color:#eeeeee;
+  color:#000000;
+}
+span{
+  color:#F2DEDE;
+  font-size:20px;
+  font-family: "微软雅黑";
+}
+.br{
+	  border-radius: 10px;
+}
+p{
+	 font-family: "微软雅黑";
+}

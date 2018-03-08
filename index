@@ -1,0 +1,154 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+<head>
+	
+<link href="css/bootstrap.min.css" rel="stylesheet"  type="text/css">
+<html xmlns="http://www.w3.org/1999/xhtml">
+	<meta name="renderer" content="webkit"> <meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+	
+<link type="text/css" rel="stylesheet" href="css/sty.css" />
+<script>
+/***************************   鼠标事件   **************************/
+function mOver(obj)
+{
+   obj.innerHTML="(～￣▽￣)～ ";
+   obj.style.backgroundColor="#265A88";
+}
+
+function mOut(obj)
+{
+   obj.innerHTML="指一下这里";
+   obj.style.backgroundColor="#337AB7";
+}
+
+function mClick(obj)
+{
+   obj.innerHTML="还可以双击哦(〃'▽'〃)";
+   obj.style.backgroundColor="#265A88";
+}
+
+function mDblClick(obj)
+{
+   obj.innerHTML="٩(๑>◡<๑)۶ ";
+   obj.style.backgroundColor="#ff6666";
+}
+
+function mDown(obj)
+{
+   obj.style.backgroundColor="#265A88";
+   obj.innerHTML="松开鼠标"
+}
+
+function mUp(obj)
+{
+   obj.style.backgroundColor="#337AB7";
+   obj.innerHTML="再按下鼠标"
+}
+
+
+/**************************   键盘事件   **************************/
+function keydownFun(){
+	document.getElementById("state").innerHTML="你正在瞎按键盘...";
+}
+function keyupFun(){
+	document.getElementById("state").innerHTML="";
+}
+
+function keyupFun2(obj){
+	obj.value=obj.value.toUpperCase();
+}
+
+
+/************************   菜单事件   ****************************/
+function focusFun1(){
+	var x=document.getElementById("user");
+	var y=document.getElementById("user_s");
+	x.style.backgroundColor="#ccffcc";
+	y.innerHTML="用户名只能为英文字母和数字";
+	
+}
+function blurFun1(){
+	var x=document.getElementById("user");
+	var y=document.getElementById("user_s");
+	x.style.backgroundColor="#ffffff";
+	y.innerHTML="";
+}
+function focusFun2(){
+	var x=document.getElementById("pwd");
+	var y=document.getElementById("pwd_s");
+	x.style.backgroundColor="#ccffcc";
+	y.innerHTML="密码长度必须大于8位";
+	
+}
+function blurFun2(){
+	var x=document.getElementById("pwd");
+	var y=document.getElementById("pwd_s");
+	x.style.backgroundColor="#ffffff";
+	y.innerHTML="";
+}
+function changeFun(){
+	x=document.getElementById("usertype").value;
+	alert("你选中的登录身份为： "+x);
+}
+function selectFun(){
+	alert("你选中了当前的文本，你想干嘛？");
+
+}
+function submitFun(){
+	alert("表单已经被提交");
+
+}
+function resetFun(){
+	alert("表单将被重置，请按照要求重新填写");
+
+}
+</script>
+</head>
+
+
+
+<body class="text-center">
+<h2>Mouse</h2>
+<br />
+<div id="div1" onmouseover="mOver(this)" onmouseout="mOut(this) ">指一下这里</div>
+<br/><br />
+<div id="div2" onclick="mClick(this)" ondblclick="mDblClick(this)">点一下这里</div>
+<br/><br />
+<div id="div3" onmousedown="mDown(this)" onmouseup="mUp(this)">这里也能点哦</div>
+<br/><br />
+<hr style="width: 370px; height:5px;border:none;border-top:1px solid #555555;" />
+
+<h2>Keyboard</h2>
+<p>随便打点什么，你就会发现……</p>
+<span id="state"></span></br></br>
+<textarea id="txt1"  rows="10" cols="50" onkeydown="keydownFun()" onkeyup="keyupFun()" class="br" style="color:black"></textarea>
+<br /><br />
+
+<h2>随便输入一些小写字母<h2/>
+<input type="text" id="txt2" onkeyup="keyupFun2(this)" style="color:black">
+<br /><br />
+<hr style="width: 370px; height:5px;border:none;border-top:1px solid #555555;" />
+
+
+
+<h2>Form</h2>
+<br />
+<form name="form_login" onsubmit="submitFun()" onreset="resetFun()">
+<table cellspacing="10" class="center-block">
+<tr><td colspan="2"><h4>用户登录界面</h4></td></tr>
+<tr><td width="80px">用户名</td><td><input type="text" id="user" onfocus="focusFun1()" onblur="blurFun1()">&nbsp;&nbsp;<span id="user_s"></span></td></tr>
+<tr><td>密&nbsp;&nbsp;&nbsp;码</td><td><input type="password" id="pwd" onfocus="focusFun2()" onblur="blurFun2()" onselect="selectFun()">&nbsp;&nbsp;<span id="pwd_s"></span></td></tr>
+<tr><td>用户类型</td><td><select id="usertype" onchange="changeFun()"><option value='在职教师'>教师</option><option value='在校学生'>学生</option><option value='系统管理员'>管理员</option></select></td></tr>
+<tr><td></td><td><input type="submit" value="登录" />&nbsp;&nbsp;<input type="reset" value="重填" /></td></tr>
+</table>
+</form>
+<br /><br />
+	<footer class="text-center">
+<hr style="width: 350px; height:5px;border:none;border-top:1px solid #555555;" />
+    <p>Written and coded by <a href="https://www.freecodecamp.cn/zzunky" target="_blank">skye</a>.</p>
+  </footer>
+
+</body>
+</html>
