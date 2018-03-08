@@ -9,7 +9,7 @@
 
 	
 <link type="text/css" rel="stylesheet" href="css/sty.css" />
-<script>
+<script type="text/javascript" src="js/mk.js"></script> 
 
 </head>
 
