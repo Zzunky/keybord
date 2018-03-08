@@ -25,7 +25,7 @@ function mDblClick(obj)
 function mDown(obj)
 {
    obj.style.backgroundColor="#265A88";
-   obj.innerHTML="松开鼠标"
+   obj.innerHTML="松开鼠标";
 }
 
 function mUp(obj)
