@@ -1,18 +1,16 @@
-﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html>
 <head>
 	
 <link href="css/bootstrap.min.css" rel="stylesheet"  type="text/css">
 <html xmlns="http://www.w3.org/1999/xhtml">
-	<meta name="renderer" content="webkit"> <meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="renderer" content="webkit"> <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 
-	
+<script type="text/javascript" src="js/mk.js"></script>
 <link type="text/css" rel="stylesheet" href="css/sty.css" />
-<script type="text/javascript" src="js/mk.js"></script> 
 
 </head>
-
 
 
 <body class="text-center">
