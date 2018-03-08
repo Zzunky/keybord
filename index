@@ -12,6 +12,7 @@
 
 </head>
 
+
 <body class="text-center">
 <h2>Mouse</h2>
 <br />
@@ -25,7 +26,7 @@
 
 <h2>Keyboard</h2>
 <p>随便打点什么，你就会发现……</p>
-<span id="state"></span></br></br>
+<span id="state" class="sp"> </span></br></br>
 <textarea id="txt1"  rows="10" cols="50" onkeydown="keydownFun()" onkeyup="keyupFun()" class="br" style="color:black"></textarea>
 <br /><br />
 
@@ -39,12 +40,12 @@
 <h2>Form</h2>
 <br />
 <form name="form_login" onsubmit="submitFun()" onreset="resetFun()">
-<table cellspacing="10" class="center-block">
-<tr><td colspan="2"><h4>用户登录界面</h4></td></tr>
+<table cellspacing="10" class="center-block br" >
+<tr><td colspan="2"><h4>注册一个账号</h4></td></tr>
 <tr><td width="80px">用户名</td><td><input type="text" id="user" onfocus="focusFun1()" onblur="blurFun1()">&nbsp;&nbsp;<span id="user_s"></span></td></tr>
 <tr><td>密&nbsp;&nbsp;&nbsp;码</td><td><input type="password" id="pwd" onfocus="focusFun2()" onblur="blurFun2()" onselect="selectFun()">&nbsp;&nbsp;<span id="pwd_s"></span></td></tr>
-<tr><td>用户类型</td><td><select id="usertype" onchange="changeFun()"><option value='在职教师'>教师</option><option value='在校学生'>学生</option><option value='系统管理员'>管理员</option></select></td></tr>
-<tr><td></td><td><input type="submit" value="登录" />&nbsp;&nbsp;<input type="reset" value="重填" /></td></tr>
+
+<tr><td></td><td><input type="submit" value="注册" />&nbsp;&nbsp;<input type="reset" value="重填" /></td></tr>
 </table>
 </form>
 <br /><br />
