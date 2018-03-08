@@ -51,7 +51,7 @@ function focusFun1(){
 	var x=document.getElementById("user");
 	var y=document.getElementById("user_s");
 	x.style.backgroundColor="#ccffcc";
-	y.innerHTML="用户名只能为英文字母和数字";
+	y.innerHTML="只能为英文字母和数字";
 	
 }
 function blurFun1(){
@@ -73,19 +73,12 @@ function blurFun2(){
 	x.style.backgroundColor="#ffffff";
 	y.innerHTML="";
 }
-function changeFun(){
-	x=document.getElementById("usertype").value;
-	alert("你选中的登录身份为： "+x);
-}
-function selectFun(){
-	alert("你选中了当前的文本，你想干嘛？");
 
-}
 function submitFun(){
-	alert("表单已经被提交");
+	alert("注册成功");
 
 }
 function resetFun(){
-	alert("表单将被重置，请按照要求重新填写");
+	alert("重新填写用户名及密码");
 
 }
