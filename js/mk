@@ -31,9 +31,8 @@ function mDown(obj)
 function mUp(obj)
 {
    obj.style.backgroundColor="#337AB7";
-   obj.innerHTML="再按下鼠标"
+   obj.innerHTML="再按下鼠标";
 }
-
 
 
 function keydownFun(){
