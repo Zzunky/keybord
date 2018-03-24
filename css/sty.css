@@ -1,6 +1,6 @@
 body{
   font-size:16px;
-  	font-family:"arial";
+  	font-family:arial，sans-serif;
 	color:gainsboro;
 	background-color:#333333;
 
@@ -15,7 +15,7 @@ div{
   text-align: center;
   border-radius: 10px;
   font-size: 20px;
-  font-family:"微软雅黑";
+  font-family:"Microsoft YaHei"，sans-serif;
 }
 table{
   width:300px;
@@ -27,11 +27,11 @@ table{
 .sp{
   color:#F2DEDE;
   font-size:20px;
-  font-family: "微软雅黑";
+  font-family:"Microsoft YaHei"，sans-serif;
 }
 .br{
 	  border-radius: 10px;
 }
 p{
-	 font-family: "微软雅黑";
+	 font-family:"Microsoft YaHei"，sans-serif;
 }
